@@ -1,0 +1,10 @@
+language: python
+python:
+  - "3.8"  # You can choose the version of Python you prefer
+
+install:
+  # This will install all dependencies from the requirements file
+  - pip install pyTelegramBotAPI  # This installs the telebot library, if not in requirements.txt
+
+script:
+  - python -m unittest discover  # Example of running tests, you can replace this with your actual command
