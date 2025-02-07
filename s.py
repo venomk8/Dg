@@ -34,8 +34,8 @@ current_directory = os.getcwd()
 
 # Default values (in case not set by the admin)
 DEFAULT_BYTE_SIZE = 5
-DEFAULT_THREADS = 150
-DEFAULT_MAX_ATTACK_TIME = 100
+DEFAULT_THREADS = 3
+DEFAULT_MAX_ATTACK_TIME = 240
 valid_ip_prefixes = ('52.', '20.', '14.', '4.', '13.')
 
 # Adjust this to your local timezone, e.g., 'America/New_York' or 'Asia/Kolkata'
